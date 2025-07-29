@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+h1{
+    color: #2575fc;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.left-box,
+.right-box {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+select.currency {
+    padding: 14px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 2px solid #2575fc;
+    background-color: #f0f8ff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="number"] {
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+button#btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button#btn:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+#heading{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
